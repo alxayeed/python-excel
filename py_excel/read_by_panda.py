@@ -31,5 +31,12 @@ def write_multiple_sheets():
     writer.save()
 
 
+# read from excel file
+def read_from_excel():
+    """Read data from an excel file"""
+    students_grade = pd.read_excel('./data/grades.xlsx')
+    print(students_grade.head())
+
+
 if __name__ == "__main__":
-    write_multiple_sheets()
+    read_from_excel()
