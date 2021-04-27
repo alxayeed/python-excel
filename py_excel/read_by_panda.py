@@ -34,7 +34,7 @@ def write_multiple_sheets():
 # read from excel file
 def read_from_excel():
     """Read data from an excel file"""
-    students_grade = pd.read_excel('./data/grades.xlsx')
+    students_grade = pd.read_excel('./data/grades.xlsx', index_col='Grade')
     print(students_grade.head())
 
 
