@@ -34,9 +34,11 @@ def write_multiple_sheets():
 # read from excel file
 def read_from_excel():
     """Read data from an excel file"""
-    students_grade = pd.read_excel(
+    df = pd.read_excel(
         './data/hartmann.xlsx', sheet_name='SearchStrategy')
-    print(students_grade.head())
+    # print(type(df.columns))
+    for c in df.columns:
+        print(c)
 
 
 if __name__ == "__main__":
