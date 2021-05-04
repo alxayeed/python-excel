@@ -54,7 +54,18 @@ def read_from_excel():
 
     # select range of cells
     #iloc[start_row:end_row, start_col:end_col]
-    print(df.iloc[0:10, 0:5])
+    cells_selection = df.iloc[1:3, 1:2]
+    # print(cells_selection)
+    # for c in cells_selection:
+    #     print(c)
+    from_date = df.iloc[1, 1]
+    to_date = df.iloc[2, 1]
+    # print(from_date, to_date, sep='\n')
+
+    keywords = df.iloc[6:9, 1]
+    keywords = list(keywords)
+    # print(type(keywords))
+    print(keywords)
 
 
 if __name__ == "__main__":
