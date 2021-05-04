@@ -37,8 +37,9 @@ def read_from_excel():
     df = pd.read_excel(
         './data/hartmann.xlsx', sheet_name='SearchStrategy')
     # print(type(df.columns))
-    for c in df.columns:
-        print(c)
+    # for c in df.columns:
+    #     print(c)
+    print(df[['Product Name:']])
 
 
 if __name__ == "__main__":
