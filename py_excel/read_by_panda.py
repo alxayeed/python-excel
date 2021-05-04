@@ -36,10 +36,18 @@ def read_from_excel():
     """Read data from an excel file"""
     df = pd.read_excel(
         './data/hartmann.xlsx', sheet_name='SearchStrategy')
+    # select all colulmns
     # print(type(df.columns))
+
+    # select all columns in a loop
     # for c in df.columns:
     #     print(c)
-    print(df[['Product Name:']])
+
+    # reads specific row
+    # print(df.iloc[4])
+
+    # select range of rows
+    print(df.iloc[6:9])
 
 
 if __name__ == "__main__":
