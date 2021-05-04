@@ -43,11 +43,18 @@ def read_from_excel():
     # for c in df.columns:
     #     print(c)
 
+    # select specific column by header name
+    # print(df[['Product Name:']])
+
     # reads specific row
     # print(df.iloc[4])
 
     # select range of rows
-    print(df.iloc[6:9])
+    # print(df.iloc[6:9])
+
+    # select range of cells
+    #iloc[start_row:end_row, start_col:end_col]
+    print(df.iloc[0:10, 0:5])
 
 
 if __name__ == "__main__":
